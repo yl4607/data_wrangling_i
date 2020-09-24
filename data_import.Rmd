@@ -16,7 +16,30 @@ litters_df = read_csv("./data/FAS_litters.csv")
 litters_df = janitor::clean_names(litters_df)
 ```
 can load janitor package in the setup
-but we only use one function
+but we only use one function, we don't need to do that
 
 
 ## Take a look at the data
+
+Pirnting in the console 
+```{r}
+litters_df
+```
+<dbl> perticular kind of number
+numerical variable
+
+```{r}
+head(litters_df)
+```
+
+```{r}
+tail(litters_df)
+```
+
+```{r}
+skimr::skim(litters_df)
+```
+
+view(litters_df)
+open another window
+better use in the console
